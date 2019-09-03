@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DeOlho.SeedWork\src\DeOlho.SeedWork\DeOlho.SeedWork.csproj" />
+    <ProjectReference Include="..\..\..\DeOlho.EventBus\src\DeOlho.EventBus.RabbitMQ.DependencyInjection\DeOlho.EventBus.RabbitMQ.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\..\DeOlho.EventBus\src\DeOlho.EventBus.MediatR\DeOlho.EventBus.MediatR.csproj" />
+    <ProjectReference Include="..\..\..\DeOlho.ETL.tse_jus_br\src\DeOlho.ETL.tse_jus_br.Messages\DeOlho.ETL.tse_jus_br.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
